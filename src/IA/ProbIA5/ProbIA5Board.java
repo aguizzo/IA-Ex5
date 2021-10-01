@@ -69,4 +69,12 @@ public class ProbIA5Board {
         board = new int[5];
         for(int i=0;i<5;i++) this.board[i] = p.board[i];
     }
+
+    @Override
+    public String toString() {
+        String ret = "[";
+        for(int i=0;i<4;i++) ret += String.valueOf(this.board[i]) + " ";
+        ret += String.valueOf(this.board[4])+ "]";
+        return ret;
+    }
 }

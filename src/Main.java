@@ -19,12 +19,8 @@ public class Main {
          *  For a problem to be solvable:
          *    count(0,prob) % 2 == count(0,sol) %2
          */
-       /* int [] prob = new int []{1 ,0, 1, 1, 0};
-        int [] sol = new int[]{1, 1, 0, 1, 0};*/
-
-        //                      {0 ,1, 2, 3, 4};
-        int [] prob = new int []{0 ,0, 0, 0, 0};
-        int [] sol = new int[]{1, 0, 0, 0, 1};
+        int [] prob = new int []{1 ,1, 1, 0, 1};
+        int [] sol = new int[]{1, 0, 1, 0, 0};
 
         ProbIA5Board board = new ProbIA5Board(prob, sol );
 
