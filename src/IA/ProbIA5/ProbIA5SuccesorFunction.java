@@ -22,7 +22,8 @@ public class ProbIA5SuccesorFunction implements SuccessorFunction{
         for(int i=0;i<5;i++) {
             ProbIA5Board newBoard = new ProbIA5Board(board);
             newBoard.flip_it(i);
-            retval.add(new Successor(new String("flip position "+ String.valueOf(i)+ " "+ String.valueOf((i+1)%5) + " " +newBoard.toString()),newBoard));
+            retval.add(new Successor(new String("flip position " + String.valueOf(i) + " "
+                    + String.valueOf((i+1)%5)+ ": " + state.toString()+ " -> " + newBoard.toString()),newBoard));
 
         }
 
