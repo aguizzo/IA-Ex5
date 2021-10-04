@@ -42,8 +42,7 @@ public class ProbIA5Board {
         // compute the number of coins out of place respect to solution
         double h = 0;
         for(int i=0;i<5;i++) {
-            if (board[i] == solution[i]) h++;
-            else h--;
+            if (board[i] != solution[i]) h++;
         }
         return h;
     }

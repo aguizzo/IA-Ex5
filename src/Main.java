@@ -32,7 +32,7 @@ public class Main {
 
         // Instantiate the search algorithm
 	// AStarSearch(new GraphSearch()) or IterativeDeepeningAStarSearch()
-        Search alg = new IterativeDeepeningAStarSearch();
+        Search alg = new AStarSearch(new GraphSearch());
 
         // Instantiate the SearchAgent object
         SearchAgent agent = new SearchAgent(p, alg);
